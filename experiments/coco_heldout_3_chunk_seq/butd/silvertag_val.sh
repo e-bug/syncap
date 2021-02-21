@@ -7,7 +7,7 @@ MODEL_SUFF=""
 SPLIT="val"
 
 PROJ_DIR="$HOME/projects/syncap"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 EXP_DIR="$PROJ_DIR/experiments/$DATA_SPLIT/${MODEL_ABBR}${MODEL_SUFF}"
 
 TOP_FN="$EXP_DIR/outputs/${SPLIT}.beam_100.top_5.json"
@@ -19,7 +19,7 @@ args="""
 	--syntax-type chunk
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 

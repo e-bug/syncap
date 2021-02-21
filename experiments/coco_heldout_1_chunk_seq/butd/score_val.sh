@@ -8,7 +8,7 @@ SPLIT="val"
 heldout_pairs="black_cat big_bird red_bus small_plane eat_man lie_woman"
 
 PROJ_DIR="$HOME/projects/syncap"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 EXP_DIR="$PROJ_DIR/experiments/$DATA_SPLIT/${MODEL_ABBR}${MODEL_SUFF}"
 
 RES_FN="$EXP_DIR/outputs/${SPLIT}.beam_100.json"
@@ -16,7 +16,7 @@ TOP_FN="$EXP_DIR/outputs/${SPLIT}.beam_100.top_5.json"
 TGT_FN="$EXP_DIR/outputs/${SPLIT}.targets.json"
 OUT_DIR="$EXP_DIR/results"
 
-ANN_DIR="/science/image/nlp-datasets/emanuele/data/syncap/coco2014/annotations/"
+ANN_DIR="/data/syncap/coco2014/annotations/"
 OCC_DIR="$PROJ_DIR/data/concept_pairs/occurrences"
 
 args="""
@@ -31,7 +31,7 @@ args="""
 	--heldout-pairs $heldout_pairs
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 

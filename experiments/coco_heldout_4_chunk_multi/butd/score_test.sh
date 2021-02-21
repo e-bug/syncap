@@ -7,7 +7,7 @@ MODEL_SUFF=""
 SPLIT="test"
 heldout_pairs="black_bird small_dog white_boat big_truck eat_horse stand_child"
 PROJ_DIR="$HOME/projects/syncap"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 EXP_DIR="$PROJ_DIR/experiments/$DATA_SPLIT/${MODEL_ABBR}${MODEL_SUFF}"
 
 RES_FN="$EXP_DIR/outputs/${SPLIT}.beam_100.json"
@@ -30,7 +30,7 @@ args="""
 	--heldout-pairs $heldout_pairs
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 

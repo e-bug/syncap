@@ -30,6 +30,6 @@ Traceback (most recent call last):
     metric2score = coco_metrics(args.results_fn, args.annotations_dir, args.annotations_split)
   File "/home/pmh864/projects/syncap/code/toolkit/common/metrics.py", line 38, in coco_metrics
     coco = COCO(ann_fn)
-  File "/science/image/nlp-datasets/emanuele/envs/syncap/lib/python3.6/site-packages/pycocotools/coco.py", line 84, in __init__
+  File "/envs/syncap/lib/python3.6/site-packages/pycocotools/coco.py", line 84, in __init__
     dataset = json.load(open(annotation_file, 'r'))
-FileNotFoundError: [Errno 2] No such file or directory: '/science/image/nlp-datasets/emanuele/data/syncap/coco2014/annotations//annotations/captions_train2014.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/data/syncap/coco2014/annotations//annotations/captions_train2014.json'

@@ -8,7 +8,7 @@ SPLIT="test"
 heldout_pairs="black_cat big_bird red_bus small_plane eat_man lie_woman"
 
 PROJ_DIR="$HOME/projects/syncap"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 EXP_DIR="$PROJ_DIR/experiments/$DATA_SPLIT/${MODEL_ABBR}${MODEL_SUFF}"
 
 RES_FN="$EXP_DIR/outputs/${SPLIT}.re_ranking.beam_100.json"
@@ -31,7 +31,7 @@ args="""
 	--heldout-pairs $heldout_pairs
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 

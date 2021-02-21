@@ -6,13 +6,13 @@ MODEL_ABBR="m2"
 MODEL_SUFF=""
 
 PROJ_DIR="$HOME/projects/syncap"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 ANNS_DIR="$DATA_DIR/coco2014/annotations"
 EXP_DIR="$PROJ_DIR/experiments/$DATA_SPLIT/${MODEL_ABBR}${MODEL_SUFF}"
 
 mkdir -p $EXP_DIR/bertscore
 
-source activate /science/image/nlp-datasets/emanuele/envs/bertscore-captioning
+source activate /envs/bertscore-captioning
 
 cd $PROJ_DIR/tools/improved-bertscore-for-image-captioning-evaluation/
 python match_cand_refs.py \

@@ -7,10 +7,10 @@ MODEL_ABBR="butd"
 MODEL_SUFF=""
 
 PROJ_DIR="$HOME/projects/syncap"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 IMGS_DIR="$DATA_DIR/coco2014/images"
-CAPS_DIR="/science/image/nlp-datasets/emanuele/data/syncap/compgen/datasets/$DATA_SPLIT"
-CKPT_DIR="/science/image/nlp-datasets/emanuele/checkpoints/syncap/${DATA_SPLIT}/${MODEL_NAME}${MODEL_SUFF}"
+CAPS_DIR="/data/syncap/compgen/datasets/$DATA_SPLIT"
+CKPT_DIR="/checkpoints/syncap/${DATA_SPLIT}/${MODEL_NAME}${MODEL_SUFF}"
 LOG_DIR="$PROJ_DIR/logs/${DATA_SPLIT}/${MODEL_NAME}${MODEL_SUFF}"
 
 mkdir -p $CKPT_DIR $LOG_DIR
@@ -31,7 +31,7 @@ model_args="""
 butd
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 

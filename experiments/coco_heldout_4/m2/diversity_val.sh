@@ -29,7 +29,7 @@ args="""
 	--data_split $DATA_SPLIT
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 

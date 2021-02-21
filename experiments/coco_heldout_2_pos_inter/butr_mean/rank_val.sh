@@ -7,12 +7,12 @@ MODEL_SUFF=""
 MODEL_ABBR="butr_mean"
 
 PROJ_DIR="$HOME/projects/syncap-dev"
-DATA_DIR="/science/image/nlp-datasets/emanuele/data/syncap"
+DATA_DIR="/data/syncap"
 IMGS_DIR="$DATA_DIR/coco2014/images"
 EXP_DIR="$PROJ_DIR/experiments/$DATA_SPLIT/${MODEL_ABBR}${MODEL_SUFF}"
-CAPS_DIR="/science/image/nlp-datasets/emanuele/data/syncap/compgen/datasets/$DATA_SPLIT"
+CAPS_DIR="/data/syncap/compgen/datasets/$DATA_SPLIT"
 LOG_DIR="$PROJ_DIR/logs/${DATA_SPLIT}/${MODEL_NAME}${MODEL_SUFF}"
-CKPT="/science/image/nlp-datasets/emanuele/checkpoints/syncap/${DATA_SPLIT}/${MODEL_NAME}${MODEL_SUFF}/checkpoint.best.pth.tar"
+CKPT="/checkpoints/syncap/${DATA_SPLIT}/${MODEL_NAME}${MODEL_SUFF}/checkpoint.best.pth.tar"
 
 
 args="""
@@ -23,7 +23,7 @@ args="""
 	--split val \
 """
 
-source activate /science/image/nlp-datasets/emanuele/envs/syncap
+source activate /envs/syncap
 
 export PYTHONWARNINGS="ignore"
 
