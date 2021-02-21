@@ -1,0 +1,35 @@
+Use device: cpu
+---
+Loading: tokenize
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tokenizer.pt', 'pretokenized': True, 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: pos
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tagger.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: lemma
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_lemmatizer.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Building an attentional Seq2Seq model...
+Using a Bi-LSTM encoder
+Using soft attention for LSTM.
+Finetune all embeddings.
+[Running seq2seq lemmatizer with edit classifier]
+---
+Loading: depparse
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_parser.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Done loading processors!
+---
+loading annotations into memory...
+Traceback (most recent call last):
+  File "/home/pmh864/projects/syncap/code/score.py", line 108, in <module>
+    main(args)
+  File "/home/pmh864/projects/syncap/code/score.py", line 75, in main
+    metric2score = coco_metrics(args.results_fn, args.annotations_dir, args.annotations_split)
+  File "/home/pmh864/projects/syncap/code/toolkit/common/metrics.py", line 38, in coco_metrics
+    coco = COCO(ann_fn)
+  File "/science/image/nlp-datasets/emanuele/envs/syncap/lib/python3.6/site-packages/pycocotools/coco.py", line 84, in __init__
+    dataset = json.load(open(annotation_file, 'r'))
+FileNotFoundError: [Errno 2] No such file or directory: '/science/image/nlp-datasets/emanuele/data/syncap/coco2014/annotations//annotations/captions_train2014.json'

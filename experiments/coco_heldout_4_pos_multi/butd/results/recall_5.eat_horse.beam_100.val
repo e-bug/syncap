@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 9, "N=2": 9, "N=3": 4, "N=4": 3, "N=5": 0}, "numbers": {"N=1": 88, "N=2": 66, "N=3": 41, "N=4": 18, "N=5": 0}, "adjective_frequencies": {"brown": 107, "No adjective": 723, "white": 74, "black": 15}, "verb_frequencies": {"stand": 499, "No verb": 315, "graze": 43, "walk": 4, "eat": 3, "pull": 4, "lay": 3}}

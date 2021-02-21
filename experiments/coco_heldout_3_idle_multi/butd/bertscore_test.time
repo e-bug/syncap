@@ -1,0 +1,11 @@
+  0%|          | 0/1459 [00:00<?, ?it/s]  0%|          | 0/1459 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "run_metric.py", line 166, in <module>
+    samples = compute_hiddens_and_idf(samples, args.output_name, save=False)
+  File "run_metric.py", line 36, in compute_hiddens_and_idf
+    device=device)[0])
+  File "/home/pmh864/projects/syncap/tools/improved-bertscore-for-image-captioning-evaluation/bert_score/utils.py", line 129, in get_bert_embedding
+    attention_mask=mask[i:i + batch_size])
+  File "/home/pmh864/projects/syncap/tools/improved-bertscore-for-image-captioning-evaluation/bert_score/utils.py", line 35, in bert_encode
+    x_seg = torch.zeros_like(x, dtype=torch.long)
+RuntimeError: CUDA error: no kernel image is available for execution on the device

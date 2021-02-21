@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 9, "N=2": 2, "N=3": 5, "N=4": 1, "N=5": 1}, "numbers": {"N=1": 168, "N=2": 48, "N=3": 20, "N=4": 7, "N=5": 2}, "adjective_frequencies": {"No adjective": 619, "red": 30, "large": 57, "white": 31, "black": 4, "green": 14, "blue": 3, "yellow": 3, "small": 1, "old": 2}, "verb_frequencies": {"No verb": 353, "park": 197, "drive": 152, "sit": 59}}

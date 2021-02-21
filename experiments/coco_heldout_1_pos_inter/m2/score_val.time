@@ -1,0 +1,86 @@
+PTBTokenizer tokenized 181155 tokens at 424802.54 tokens per second.
+PTBTokenizer tokenized 30938 tokens at 137579.88 tokens per second.
+Parsing reference captions
+Parsing test captions
+SPICE evaluation took: 6.868 s
+loading annotations into memory...
+Done (t=0.99s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.04s)
+creating index...
+index created!
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 28003, 'reflen': 27785, 'guess': [28003, 25067, 22132, 19211], 'correct': [21962, 12758, 6516, 3297]}
+ratio: 1.0078459600503507
+Bleu_1: 0.784
+Bleu_2: 0.632
+Bleu_3: 0.490
+Bleu_4: 0.377
+computing METEOR score...
+METEOR: 0.287
+computing Rouge score...
+ROUGE_L: 0.583
+computing CIDEr score...
+CIDEr: 1.163
+computing SPICE score...
+SPICE: 0.230
+Bleu_1: 78.427
+Bleu_2: 63.179
+Bleu_3: 48.982
+Bleu_4: 37.685
+METEOR: 28.727
+ROUGE_L: 58.293
+CIDEr: 116.256
+SPICE: 23.017
+Use device: cpu
+---
+Loading: tokenize
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tokenizer.pt', 'pretokenized': True, 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: pos
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tagger.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: lemma
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_lemmatizer.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Building an attentional Seq2Seq model...
+Using a Bi-LSTM encoder
+Using soft attention for LSTM.
+Finetune all embeddings.
+[Running seq2seq lemmatizer with edit classifier]
+---
+Loading: depparse
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_parser.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Done loading processors!
+---
+Use device: cpu
+---
+Loading: tokenize
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tokenizer.pt', 'pretokenized': True, 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: pos
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tagger.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: lemma
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_lemmatizer.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Building an attentional Seq2Seq model...
+Using a Bi-LSTM encoder
+Using soft attention for LSTM.
+Finetune all embeddings.
+[Running seq2seq lemmatizer with edit classifier]
+---
+Loading: depparse
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_parser.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Done loading processors!
+---

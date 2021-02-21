@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 21, "N=2": 26, "N=3": 9, "N=4": 9, "N=5": 2}, "numbers": {"N=1": 194, "N=2": 69, "N=3": 28, "N=4": 16, "N=5": 5}, "adjective_frequencies": {"No adjective": 381, "little": 17, "young": 26}, "verb_frequencies": {"ride": 152, "ski": 26, "stand": 60, "sit": 137, "hold": 21, "walk": 5, "surf": 4, "do": 4, "No verb": 13, "wear": 1, "petting": 1}}

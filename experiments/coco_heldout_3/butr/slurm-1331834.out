@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/pmh864/projects/syncap/code/score.py", line 98, in <module>
+    main(args)
+  File "/home/pmh864/projects/syncap/code/score.py", line 55, in main
+    args.heldout_pairs, args.annotations_split)
+  File "/home/pmh864/projects/syncap/code/toolkit/common/metrics.py", line 76, in recall_pairs
+    with open(generated_captions_fn) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pmh864/projects/syncap/experiments/coco_heldout_3/butr/outputs/val.beam_100.top_5.json'

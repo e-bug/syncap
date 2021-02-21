@@ -1,0 +1,11 @@
+usage: test.py [-h] [--batch_size BATCH_SIZE] [--workers WORKERS]
+               [--features_path FEATURES_PATH]
+               [--annotation_folder ANNOTATION_FOLDER] [--id_folder ID_FOLDER]
+               [--beam_size BEAM_SIZE] [--eval_beam_size EVAL_BEAM_SIZE]
+               [--max_len MAX_LEN] [--output_path OUTPUT_PATH] --checkpoint
+               CHECKPOINT [--split {test}]
+test.py: error: unrecognized arguments: --keep-special-tokens
+
+real	0m2.140s
+user	0m1.144s
+sys	0m0.322s

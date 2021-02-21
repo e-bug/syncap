@@ -1,0 +1,78 @@
+slurmstepd: error: *** JOB 1331660 ON a00561 CANCELLED AT 2019-11-28T09:57:26 ***
+slurmstepd: error: *** JOB 1331661 ON a00561 CANCELLED AT 2019-11-28T09:57:28 ***
+slurmstepd: error: *** JOB 1331662 ON a00561 CANCELLED AT 2019-11-28T09:57:29 ***
+PTBTokenizer tokenized 181155 tokens at 451875.87 tokens per second.
+PTBTokenizer tokenized 28245 tokens at 113163.17 tokens per second.
+Parsing reference captions
+Parsing test captions
+Initiating Stanford parsing pipeline
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.TokenizerAnnotator - TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... 
+done [0.8 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ner
+Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [1.7 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [0.7 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [0.6 sec].
+Threads( StanfordCoreNLP ) [19.484 seconds]
+SPICE evaluation took: 36.59 s
+Use device: cpu
+---
+Loading: tokenize
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tokenizer.pt', 'pretokenized': True, 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: pos
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tagger.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: lemma
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_lemmatizer.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Building an attentional Seq2Seq model...
+Using a Bi-LSTM encoder
+Using soft attention for LSTM.
+Finetune all embeddings.
+[Running seq2seq lemmatizer with edit classifier]
+---
+Loading: depparse
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_parser.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Done loading processors!
+---
+loading annotations into memory...
+Done (t=0.89s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 25310, 'reflen': 26106, 'guess': [25310, 22374, 19438, 16502], 'correct': [19444, 10908, 5424, 2695]}
+ratio: 0.9695089251512691
+Bleu_1: 0.744
+Bleu_2: 0.593
+Bleu_3: 0.456
+Bleu_4: 0.350
+computing METEOR score...
+METEOR: 0.262
+computing Rouge score...
+ROUGE_L: 0.569
+computing CIDEr score...
+CIDEr: 0.982
+computing SPICE score...
+SPICE: 0.201
+Bleu_1: 74.445
+Bleu_2: 59.305
+Bleu_3: 45.645
+Bleu_4: 35.026
+METEOR: 26.193
+ROUGE_L: 56.879
+CIDEr: 98.161
+SPICE: 20.062

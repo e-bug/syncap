@@ -1,0 +1,5 @@
+---> loading BERT model
+---> computing contextual embeddings
+---> computing idf weights
+---> detecting mismatches
+---> computing scores

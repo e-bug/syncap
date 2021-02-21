@@ -1,0 +1,10 @@
+#!/bin/bash
+# normal cpu stuff: allocate cpus, memory
+#SBATCH --ntasks=1 --cpus-per-task=1 --mem=1000M
+#We expect that our program should not run langer than 2 hours
+#Note that a program will be killed once it exceeds this time!
+#SBATCH --time=02:00:00
+#SBATCH --job-name="m2_h2"
+#SBATCH --output="score_test.time"
+
+./score_test.sh

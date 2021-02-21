@@ -1,0 +1,5 @@
+rsum: 287.5
+Average i2t Recall: 53.6
+Image to text (Image Annotation): 29.8 59.4 71.5 4.0 15.2
+Average t2i Recall: 42.3
+Text to image (Image Search): 21.0 46.5 59.3 7.0 31.6

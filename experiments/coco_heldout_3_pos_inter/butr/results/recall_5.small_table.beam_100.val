@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 0, "N=2": 0, "N=3": 0, "N=4": 0, "N=5": 0}, "numbers": {"N=1": 222, "N=2": 29, "N=3": 6, "N=4": 0, "N=5": 0}, "adjective_frequencies": {"No adjective": 591, "full": 6, "white": 3, "green": 1}, "verb_frequencies": {"No verb": 563, "sit": 9, "have": 8, "top": 14, "fill": 7}}

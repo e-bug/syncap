@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 3, "N=2": 2, "N=3": 0, "N=4": 0, "N=5": 0}, "numbers": {"N=1": 155, "N=2": 36, "N=3": 4, "N=4": 0, "N=5": 0}, "adjective_frequencies": {"No adjective": 645, "small": 41, "blue": 15, "large": 36, "many": 3, "white": 25, "red": 25}, "verb_frequencies": {"No verb": 553, "sit": 81, "float": 82, "travel": 26, "dock": 11, "stand": 1, "tie": 7, "sailing": 4}}

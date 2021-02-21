@@ -1,0 +1,62 @@
+PTBTokenizer tokenized 82057 tokens at 225181.80 tokens per second.
+PTBTokenizer tokenized 12716 tokens at 62698.85 tokens per second.
+Parsing reference captions
+Parsing test captions
+SPICE evaluation took: 4.936 s
+Use device: cpu
+---
+Loading: tokenize
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tokenizer.pt', 'pretokenized': True, 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: pos
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_tagger.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+---
+Loading: lemma
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_lemmatizer.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Building an attentional Seq2Seq model...
+Using a Bi-LSTM encoder
+Using soft attention for LSTM.
+Finetune all embeddings.
+[Running seq2seq lemmatizer with edit classifier]
+---
+Loading: depparse
+With settings: 
+{'model_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt_parser.pt', 'pretrain_path': '/home/pmh864/bin/stanfordnlp_resources/en_ewt_models/en_ewt.pretrain.pt', 'lang': 'en', 'shorthand': 'en_ewt', 'mode': 'predict'}
+Done loading processors!
+---
+loading annotations into memory...
+Done (t=0.43s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.02s)
+creating index...
+index created!
+tokenization...
+setting up scorers...
+computing Bleu score...
+{'testlen': 11362, 'reflen': 11820, 'guess': [11362, 10016, 8670, 7324], 'correct': [8596, 4552, 2078, 973]}
+ratio: 0.9612521150591403
+Bleu_1: 0.727
+Bleu_2: 0.563
+Bleu_3: 0.418
+Bleu_4: 0.311
+computing METEOR score...
+METEOR: 0.243
+computing Rouge score...
+ROUGE_L: 0.540
+computing CIDEr score...
+CIDEr: 0.889
+computing SPICE score...
+SPICE: 0.180
+Bleu_1: 72.667
+Bleu_2: 56.321
+Bleu_3: 41.798
+Bleu_4: 31.069
+METEOR: 24.282
+ROUGE_L: 54.039
+CIDEr: 88.882
+SPICE: 17.983

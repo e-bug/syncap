@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 0, "N=2": 0, "N=3": 0, "N=4": 0, "N=5": 0}, "numbers": {"N=1": 163, "N=2": 16, "N=3": 5, "N=4": 1, "N=5": 0}, "adjective_frequencies": {"No adjective": 666, "white": 141, "gray": 6, "black": 133, "brown": 4, "small": 7}, "verb_frequencies": {"sit": 476, "lay": 313, "stand": 30, "sleep": 10, "No verb": 23, "lie": 1, "hold": 1, "look": 1, "wear": 1}}

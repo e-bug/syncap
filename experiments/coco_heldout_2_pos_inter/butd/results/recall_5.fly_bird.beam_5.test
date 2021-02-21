@@ -1,0 +1,1 @@
+{"true_positives": {"N=1": 9, "N=2": 4, "N=3": 4, "N=4": 10, "N=5": 2}, "numbers": {"N=1": 52, "N=2": 29, "N=3": 21, "N=4": 18, "N=5": 7}, "adjective_frequencies": {"black": 6, "white": 35, "large": 18, "No adjective": 325, "colorful": 6, "many": 1, "small": 1}, "verb_frequencies": {"fly": 98, "No verb": 156, "stand": 60, "sit": 47, "perch": 9, "swim": 10}}

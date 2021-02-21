@@ -1,0 +1,2 @@
+slurmstepd: error: Could not run slurm task_prolog [/etc/slurm/prolog.sh]: Permission denied
+slurmstepd: error: *** JOB 1404549 ON a00555 CANCELLED AT 2020-03-27T10:45:04 ***
