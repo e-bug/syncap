@@ -132,8 +132,6 @@ venv.bak/
 .idea/
 
 # Project
-data/
-coco2014_preprocessed/
 checkpoints/
 saved_models/
 cache/
