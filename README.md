@@ -11,7 +11,7 @@ We provide the code for reproducing our results, processed data and pretrained m
 
 ## Requirements
 You can clone this repository with submodules included issuing: <br>
-`git clone git@github.com:e-bug/syncap`
+`git clone git@github.com:e-bug/syncap.git`
 
 The requirements can be installed by setting up a conda environment: <br>
 `conda env create -f environment.yml` followed by `source activate syncap`
