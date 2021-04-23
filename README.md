@@ -66,12 +66,15 @@ If you find our code/data/models or ideas useful in your research, please consid
 ```
 @inproceedings{bugliarello-elliott-2021-role,
     title = "The Role of Syntactic Planning in Compositional Image Captioning",
-    author = "Bugliarello, Emanuele and Elliott, Desmond",
-    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics",
+    author = "Bugliarello, Emanuele  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
     month = apr,
     year = "2021",
     address = "Online",
     publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.eacl-main.48",
+    pages = "593--607",
 }
 ```
 
